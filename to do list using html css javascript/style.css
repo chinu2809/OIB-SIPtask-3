@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  button{
+    padding:  25px 15px;
+  }
+  * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Fira sans", sans-serif;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #cc00b1;
+      background-color: dark;
+  }
+  
+  header {
+      padding: 32px 16px;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  header h1{ 
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 16px;
+  }
+  #new-task-form{
+    display: flex;
+  }
+  
+    #new-task-input {
+      width: 37rem;
+      height: 35px;
+      border-radius: 20;
+      border-radius: 30px;
+  }
+  #new-task-submit{
+    flex: none;
+    border: 3px;
+    outline: 3px;
+    background-image: linear-gradient(to right, #e13dad,purple);
+    border-radius: 30px;
+    text-decoration-color: black;
+  }
+  #new-task-submit {
+      color: purple;
+      cursor: pointer;
+  }
+  #new-task-submit:hover {
+      opacity: 0.8;
+  }
+  
+  #new-task-submit:active {
+      opacity: 0.6;
+  }
+  input.text {
+      background-color: #a5d6e9;
+  }
+  main {
+      flex: 1 1 0%;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  .task-list {
+      padding: 16px;
+  }
+  
+  .task-list h2 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 16px;
+  }
+  
+  #tasks .task {
+      display: flex;
+      justify-content: space-between;
+      background-color: darkest;
+      padding: 1px;
+      border-radius: 25%;
+      margin-bottom: 1px;
+  }
+  .task .content {
+      flex: 1 1 0%;
+  }
+  
+  .task .content .text {
+    color: light;
+        font-size: 18px;
+      width: 100%;
+      height: 35px;
+      border-radius: 30px;
+      display: block;
+      transition: 0.4s;
+  }
+  
+  .task .content .text:not(:read-only) {
+    color:#6a0153;
+  }
+  
+  .task .actions {
+      display: flex;
+      margin: 0;
+  }
+  
+  .task .actions button {
+      cursor: pointer;
+      margin: 0 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.4s;
+  }
+  button {
+      padding: inherit;
+      border-radius: 10px;
+      width: 120px;
+      height: 40px;
+  }
+  .task .actions button:hover {
+      opacity: 0.8;
+  }
+  
+  .task .actions button:active {
+      opacity: 0.6;
+  }
+  
+  .task .actions .edit {
+      background-image: linear-gradient(to right, #e13dad,purple);
+  
+  }
+  
+  .task .actions .delete {
+    background-image: linear-gradient(to right, #e13dad,purple);
+      
+  }
+  
